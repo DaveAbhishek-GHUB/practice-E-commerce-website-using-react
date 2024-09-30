@@ -5,7 +5,7 @@ import Logo from "../../public/Images/a-sleek-and-sophisticated-logo-for-a-premi
 import { useDispatch, useSelector } from "react-redux";
 import { resetGoogleData } from "../../public/store/cartSlice";
 
-function Navbar() {
+function FashinoNavbar() {
   const GoogleData = useSelector((state) => state.cart.GoogleRegisterData);
   const dispatch = useDispatch();
   console.log("Google Data from navbar", GoogleData);
@@ -25,10 +25,10 @@ function Navbar() {
           </Link>
           {GoogleData == null ? (
             <div className="flex gap-10">
-              <Link className="font-sans text-[1.3vw]" to="/login">
+              <Link className="font-sans text-[1.3vw]" to="/fashinologin">
                 Login
               </Link>
-              <Link className="font-sans text-[1.3vw]" to="/register">
+              <Link className="font-sans text-[1.3vw]" to="/fashinoregister">
                 Register
               </Link>
             </div>
@@ -42,7 +42,7 @@ function Navbar() {
           <img className="w-16" src={Logo} alt="Logo" />
         </div>
         <div className="cart-and-profile-wrapper w-[40%] flex justify-center items-center gap-10">
-          <Link to="/cart">
+          <Link to="/fashinocart">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -87,7 +87,7 @@ function Navbar() {
             </svg>
           </Link>
 
-          <Link to="/profile">
+          <Link to="/fashinoprofile">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -116,4 +116,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default FashinoNavbar;

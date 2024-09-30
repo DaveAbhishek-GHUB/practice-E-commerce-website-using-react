@@ -6,9 +6,9 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Collections from "./components/Collections";
 import CartPage from "./components/CartPage";
-import Login from "./components/Login";
 import FashinoRegister from "./components/FashinoRegister";
 import FashinoProfile from "./components/fashinoProfile";
+import FashinoLogin from "./components/FashinoLogin";
 
 function App() {
   return (
@@ -17,10 +17,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/collections" element={<Collections />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<FashinoRegister />} />
-        <Route path="/profile" element={<FashinoProfile />} />
+        <Route path="/fashinocart" element={<CartPage />} />
+        <Route path="/fashinologin" element={<FashinoLogin />} />
+        <Route path="/fashinoregister" element={<FashinoRegister />} />
+        <Route path="/fashinoprofile" element={<FashinoProfile />} />
       </Routes>
     </>
   );

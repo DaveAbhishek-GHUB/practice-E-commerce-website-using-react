@@ -10,7 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setGoogleLogin } from "../../public/store/cartSlice";
 
-function Login() {
+function FashinoLogin() {
   const [userGoogleData, setUserGoogleData] = useState(null);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -146,4 +146,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default FashinoLogin;
